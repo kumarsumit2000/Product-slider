@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Slider</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .sliderContainer {
+        position: relative;
+        width: 80%;
+        max-width: 1000px;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+        max-width: 1000px;
+        overflow: hidden;
+    }
+
+    .productCard {
+        min-width: 200px;
+        max-width: 200px;
+        margin: 0 10px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .productCard img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .productCard h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .productCard p {
+        color: #555;
+        margin: 5px 0;
+    }
+
+    .productCard button {
+        background-color: #ff9900;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .productCard button:hover {
+        background-color: #e68a00;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    .prevBtn {
+        left: 10px;
+    }
+
+    .nextBtn {
+        right: 10px;
+    }
+</style>
+
+<body>
+    <div class="sliderContainer">
+        <button class="prevBtn">&#10094;</button>
+        <div class="slider">
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 1</h3>
+                <p>⭐⭐⭐⭐⭐ (123 reviews)</p>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="productCard">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <h3>Product Title 2</h3>
+                <p>⭐⭐⭐⭐ (89 reviews)</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+        <button class="nextBtn">&#10095;</button>
+    </div>
+
+
+</body>
+<script>let sliders = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prevBtn');
+    const nextBtn = document.querySelector('.nextBtn');
+
+    nextBtn.addEventListener('click', () => {
+        sliders.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        sliders.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+</script>
+
+</html>
